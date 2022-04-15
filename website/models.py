@@ -6,9 +6,3 @@ class Ai1(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, db_index=True)
     current = models.FloatField()
     sts = models.IntegerField()
-
-
-class Ai2(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, db_index=True)
-    current = models.FloatField()
-    sts = models.IntegerField()

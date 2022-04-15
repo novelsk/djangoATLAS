@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <ul>
+        {{ addForm.as_ul }}
+    </ul>
+    {% buttons submit='Добавить' %}{% endbuttons %}
+</form>
+{% endblock %}
+
