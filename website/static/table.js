@@ -5,7 +5,7 @@ const changeStsButton = document.getElementById('stsChange');
 
 
 function api_get_update() {
-  jQuery.get("../api/ai/", function( data ) {
+  jQuery.get("../api/", function( data ) {
     let newData = [[], [], []];
     if (jQuery(changeStsButton).hasClass('sts-1')) {
       for (const item in data) {
